@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pricebooks xmlns="http://www.demandware.com/xml/impex/pricebook/2006-10-31">
+    <pricebook>
+        <header pricebook-id="training-list-prices-2">
+            <currency>USD</currency>
+            <display-name xml:lang="x-default">training-list-prices-2</display-name>
+            <online-flag>true</online-flag>
+        </header>
+
+        <price-tables>
+            <price-table product-id="dune">
+                <amount quantity="1">10.00</amount>
+            </price-table>
+
+            <price-table product-id="tallGirl">
+                <amount quantity="1">8.00</amount>
+            </price-table>
+
+            <price-table product-id="theBatman">
+                <amount quantity="1">10.00</amount>
+            </price-table>
+
+        </price-tables>
+    </pricebook>
+</pricebooks>
