@@ -27,47 +27,6 @@
         <parent>root</parent>
         <template/>
         <page-attributes/>
-        <custom-attributes>
-            <custom-attribute attribute-id="disableShowInStickyNav">false</custom-attribute>
-            <custom-attribute attribute-id="disableViewAllLink">false</custom-attribute>
-            <custom-attribute attribute-id="displayMerchandisingSpot">false</custom-attribute>
-            <custom-attribute attribute-id="enableCompare">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot1">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot2">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot3">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot4">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot1">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot2">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot3">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot4">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot5">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot6">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot7">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot8">false</custom-attribute>
-            <custom-attribute attribute-id="enableGiftFinderCatSlot">false</custom-attribute>
-            <custom-attribute attribute-id="enableGiftWrapProduct">false</custom-attribute>
-            <custom-attribute attribute-id="enableProductTileAlternativeImage">false</custom-attribute>
-            <custom-attribute attribute-id="enableStorePickup">false</custom-attribute>
-            <custom-attribute attribute-id="enableSystemNavigation">false</custom-attribute>
-            <custom-attribute attribute-id="enableSystemNavigationInfo">false</custom-attribute>
-            <custom-attribute attribute-id="enableUpselling">false</custom-attribute>
-            <custom-attribute attribute-id="enableViewAllLink">false</custom-attribute>
-            <custom-attribute attribute-id="excludeFromRichRelevanceFeed">false</custom-attribute>
-            <custom-attribute attribute-id="hideInBreadcrumbs">false</custom-attribute>
-            <custom-attribute attribute-id="mobifyAMPSkip">false</custom-attribute>
-            <custom-attribute attribute-id="nonProductCategory">false</custom-attribute>
-            <custom-attribute attribute-id="routineEnabled">false</custom-attribute>
-            <custom-attribute attribute-id="routineForAllProducts">false</custom-attribute>
-            <custom-attribute attribute-id="rrGenere">false</custom-attribute>
-            <custom-attribute attribute-id="showAllSubCategoriesInPLP">false</custom-attribute>
-            <custom-attribute attribute-id="showBrandHeader">false</custom-attribute>
-            <custom-attribute attribute-id="showBrandImage">false</custom-attribute>
-            <custom-attribute attribute-id="showInMenu">true</custom-attribute>
-            <custom-attribute attribute-id="showInMobileMenu">false</custom-attribute>
-            <custom-attribute attribute-id="showInNavPanel">false</custom-attribute>
-            <custom-attribute attribute-id="showShadeSelector">false</custom-attribute>
-            <custom-attribute attribute-id="unclickableInMenu">false</custom-attribute>
-        </custom-attributes>
     </category>
 
     <category category-id="action">
@@ -76,47 +35,6 @@
         <parent>movies</parent>
         <template/>
         <page-attributes/>
-        <custom-attributes>
-            <custom-attribute attribute-id="disableShowInStickyNav">false</custom-attribute>
-            <custom-attribute attribute-id="disableViewAllLink">false</custom-attribute>
-            <custom-attribute attribute-id="displayMerchandisingSpot">false</custom-attribute>
-            <custom-attribute attribute-id="enableCompare">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot1">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot2">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot3">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot4">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot1">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot2">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot3">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot4">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot5">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot6">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot7">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot8">false</custom-attribute>
-            <custom-attribute attribute-id="enableGiftFinderCatSlot">false</custom-attribute>
-            <custom-attribute attribute-id="enableGiftWrapProduct">false</custom-attribute>
-            <custom-attribute attribute-id="enableProductTileAlternativeImage">false</custom-attribute>
-            <custom-attribute attribute-id="enableStorePickup">false</custom-attribute>
-            <custom-attribute attribute-id="enableSystemNavigation">false</custom-attribute>
-            <custom-attribute attribute-id="enableSystemNavigationInfo">false</custom-attribute>
-            <custom-attribute attribute-id="enableUpselling">false</custom-attribute>
-            <custom-attribute attribute-id="enableViewAllLink">false</custom-attribute>
-            <custom-attribute attribute-id="excludeFromRichRelevanceFeed">false</custom-attribute>
-            <custom-attribute attribute-id="hideInBreadcrumbs">false</custom-attribute>
-            <custom-attribute attribute-id="mobifyAMPSkip">false</custom-attribute>
-            <custom-attribute attribute-id="nonProductCategory">false</custom-attribute>
-            <custom-attribute attribute-id="routineEnabled">false</custom-attribute>
-            <custom-attribute attribute-id="routineForAllProducts">false</custom-attribute>
-            <custom-attribute attribute-id="rrGenere">false</custom-attribute>
-            <custom-attribute attribute-id="showAllSubCategoriesInPLP">false</custom-attribute>
-            <custom-attribute attribute-id="showBrandHeader">false</custom-attribute>
-            <custom-attribute attribute-id="showBrandImage">false</custom-attribute>
-            <custom-attribute attribute-id="showInMenu">true</custom-attribute>
-            <custom-attribute attribute-id="showInMobileMenu">false</custom-attribute>
-            <custom-attribute attribute-id="showInNavPanel">false</custom-attribute>
-            <custom-attribute attribute-id="showShadeSelector">false</custom-attribute>
-            <custom-attribute attribute-id="unclickableInMenu">false</custom-attribute>
-        </custom-attributes>
     </category>
 
     <category category-id="comedy">
@@ -125,47 +43,6 @@
         <parent>movies</parent>
         <template/>
         <page-attributes/>
-        <custom-attributes>
-            <custom-attribute attribute-id="disableShowInStickyNav">false</custom-attribute>
-            <custom-attribute attribute-id="disableViewAllLink">false</custom-attribute>
-            <custom-attribute attribute-id="displayMerchandisingSpot">false</custom-attribute>
-            <custom-attribute attribute-id="enableCompare">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot1">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot2">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot3">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomNavigationSlot4">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot1">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot2">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot3">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot4">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot5">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot6">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot7">false</custom-attribute>
-            <custom-attribute attribute-id="enableCustomPLPSlot8">false</custom-attribute>
-            <custom-attribute attribute-id="enableGiftFinderCatSlot">false</custom-attribute>
-            <custom-attribute attribute-id="enableGiftWrapProduct">false</custom-attribute>
-            <custom-attribute attribute-id="enableProductTileAlternativeImage">false</custom-attribute>
-            <custom-attribute attribute-id="enableStorePickup">false</custom-attribute>
-            <custom-attribute attribute-id="enableSystemNavigation">false</custom-attribute>
-            <custom-attribute attribute-id="enableSystemNavigationInfo">false</custom-attribute>
-            <custom-attribute attribute-id="enableUpselling">false</custom-attribute>
-            <custom-attribute attribute-id="enableViewAllLink">false</custom-attribute>
-            <custom-attribute attribute-id="excludeFromRichRelevanceFeed">false</custom-attribute>
-            <custom-attribute attribute-id="hideInBreadcrumbs">false</custom-attribute>
-            <custom-attribute attribute-id="mobifyAMPSkip">false</custom-attribute>
-            <custom-attribute attribute-id="nonProductCategory">false</custom-attribute>
-            <custom-attribute attribute-id="routineEnabled">false</custom-attribute>
-            <custom-attribute attribute-id="routineForAllProducts">false</custom-attribute>
-            <custom-attribute attribute-id="rrGenere">false</custom-attribute>
-            <custom-attribute attribute-id="showAllSubCategoriesInPLP">false</custom-attribute>
-            <custom-attribute attribute-id="showBrandHeader">false</custom-attribute>
-            <custom-attribute attribute-id="showBrandImage">false</custom-attribute>
-            <custom-attribute attribute-id="showInMenu">true</custom-attribute>
-            <custom-attribute attribute-id="showInMobileMenu">false</custom-attribute>
-            <custom-attribute attribute-id="showInNavPanel">false</custom-attribute>
-            <custom-attribute attribute-id="showShadeSelector">false</custom-attribute>
-            <custom-attribute attribute-id="unclickableInMenu">false</custom-attribute>
-        </custom-attributes>
     </category>
 
     <category-assignment category-id="action" product-id="dune">
