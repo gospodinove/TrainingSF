@@ -5,4 +5,14 @@
         <page-attributes/>
     </folder>
 
+    <content content-id="slot-training-2">
+        <display-name xml:lang="x-default">slot training 2</display-name>
+        <online-flag>true</online-flag>
+        <searchable-flag>true</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h1&gt;Content slottttt&lt;/h1&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
 </library>
