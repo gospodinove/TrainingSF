@@ -3,7 +3,7 @@
     <name>Training 2.0</name>
     <currency>USD</currency>
     <taxation>net</taxation>
-    <custom-cartridges>modules:app_storefront_base</custom-cartridges>
+    <custom-cartridges>modules:app_storefront_base:bm_app_storefront_base</custom-cartridges>
     <storefront-status>online</storefront-status>
 </site>
 
