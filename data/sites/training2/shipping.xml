@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shipping xmlns="http://www.demandware.com/xml/impex/shipping/2007-03-31">
+    <shipping-method method-id="zero-price" default="false">
+        <online-flag>false</online-flag>
+        <price-table>
+            <amount order-value="0.0">0.0</amount>
+        </price-table>
+        <custom-attributes>
+            <custom-attribute attribute-id="storePickupEnabled">false</custom-attribute>
+        </custom-attributes>
+        <customer-groups>
+            <customer-group>Birthday</customer-group>
+        </customer-groups>
+    </shipping-method>
+
+</shipping>
