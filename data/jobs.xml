@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="AssetUpdaterJob" priority="0">
+        <description>Update local assets folder</description>
+        <parameters/>
+        <flow>
+            <context site-id="Sites"/>
+            <step step-id="LocalAssetUpdaterStep" type="ExecuteScriptModule" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="ExecuteScriptModule.Module">app_custom2/cartridge/scripts/assetUpdater.js</parameter>
+                    <parameter name="ExecuteScriptModule.FunctionName">execute</parameter>
+                    <parameter name="ExecuteScriptModule.Transactional">false</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2022-03-21Z</date>
+                <time>15:40:48.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
     <job job-id="RebuildURLs" priority="0">
         <description/>
         <parameters/>
