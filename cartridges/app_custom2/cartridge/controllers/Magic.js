@@ -32,4 +32,16 @@ server.get('Search', function (req, res, next) {
     next();
 });
 
+server.get('Json',  function (req, res, next) {
+	var svcResult = service.dadJokeAPIService.call();
+    
+    if (svcResult.status === 'OK') {
+    	res.json(svcResult.object);
+    } else {
+    	res.json({});
+    }
+
+    next();
+});
+
 module.exports = server.exports();
