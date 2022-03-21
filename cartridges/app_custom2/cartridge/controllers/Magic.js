@@ -34,13 +34,18 @@ server.get('Search', function (req, res, next) {
 
 server.get('Json',  function (req, res, next) {
 	var svcResult = service.dadJokeAPIService.call();
-    
+
     if (svcResult.status === 'OK') {
     	res.json(svcResult.object);
     } else {
     	res.json({});
     }
 
+    next();
+});
+
+server.get('Hello', function (req, res, next) {
+    res.render('hello');
     next();
 });
 
