@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <slot-configurations xmlns="http://www.demandware.com/xml/impex/slot/2008-09-08">
+    <slot-configuration slot-id="productDetailsTestSlot" context="global" configuration-id="Product Details Test Slot Configuration - 2022-03-25 16:00:51" default="true" assigned-to-site="true">
+        <template>slots/html/htmlSlotContainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;h2 style="color: pink"&gt;Product Details Test Slot&lt;/h2&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
     <slot-configuration slot-id="header-banner-m" context="global" configuration-id="Slot Configuration - 2022-03-14 16:17:41" default="true" assigned-to-site="true">
         <template>slots/html/htmlSlotContainer.isml</template>
         <rank>10</rank>
