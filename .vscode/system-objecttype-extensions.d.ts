@@ -12,10 +12,24 @@ declare global {
 			* Magic page background
 
 				A hexadecimal color value for the Magic page background color.
-			* 
-			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#5) 
+			* @group Training_2 - Training 2
+			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#5) | [group](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#30)
 			*/
 			magicPageBackground: string | null;
+
+			/**
+			* Custom site preference for Training 2
+			* @group Training_2 - Training 2
+			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#13) | [group](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#31)
+			*/
+			customSitePreference: string | null;
+
+			/**
+			* 
+			* @group Training_2 - Training 2
+			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#20) | [group](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#32)
+			*/
+			productShippingDetails2: string | null;
 
 		}
 	}
@@ -27,10 +41,24 @@ declare global {
 			* Magic page background
 
 				A hexadecimal color value for the Magic page background color.
-			* 
-			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#5) 
+			* @group Training_2 - Training 2
+			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#5) | [group](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#30)
 			*/
 			(name: 'magicPageBackground'): string | null;
+			
+			/**
+			* Custom site preference for Training 2
+			* @group Training_2 - Training 2
+			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#13) | [group](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#31)
+			*/
+			(name: 'customSitePreference'): string | null;
+			
+			/**
+			* 
+			* @group Training_2 - Training 2
+			* @source [attribute](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#20) | [group](file:/Users/gospodinove/Projects/TrainingSF/data/meta/system-objecttype-extensions.xml#32)
+			*/
+			(name: 'productShippingDetails2'): string | null;
 			
 	}
 }

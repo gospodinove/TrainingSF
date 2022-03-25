@@ -5,4 +5,13 @@
         <page-attributes/>
     </folder>
 
+    <content content-id="shippingDetails">
+        <online-flag>true</online-flag>
+        <searchable-flag>true</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h4&gt;This is the Shipping details included remotely&lt;/h4&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
 </library>
