@@ -62,6 +62,13 @@
           </div>
         </div>
 
+        <div class='row'>
+          <div class="col">
+            <h6>Custom site preference</h6>
+            <p>${pdict.customSitePreference}</p>
+          </div>
+        </div>
+
         <div class="attributes">
           <!-- Attributes and Quantity -->
           <isinclude template="product/components/mainAttributes" />
