@@ -3,3 +3,24 @@
 <isinclude url="${URLUtils.url('Page-Include', 'cid', shippingDetails)}" sf-toolkit="on" />
 
 <isslot id="productDetailsTestSlot" context="global" description="" context-object="" preview-url="" />
+
+<isif condition="${product.tags2.length > 0}">
+  <isset name="tagsBellow5Chars" value="${0}" scope="page" />
+
+  <ul>
+    <isloop items="${product.tags2}" var="tag" status="loopstatus">
+      <isif condition="${tag.length <= 5}">
+        <li>
+          <isprint value="${tag.length}" />
+          <isprint value="${tag}" encoding="on" />
+        </li>
+
+        <isset name="tagsBellow5Chars" value="${tagsBellow5Chars + 1}" scope="page" />
+      </isif>
+
+      <isif condition="${tagsBellow5Chars == 5}">
+        <isbreak/>
+      </isif>
+    </isloop>
+  </ul>
+</isif>

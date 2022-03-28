@@ -50,6 +50,19 @@
             </image-group>
         </images>
         <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="promoMsg">PROMOTION</custom-attribute>
+            <custom-attribute attribute-id="tags2">
+                <value>tag</value>
+                <value>taag</value>
+                <value>asdfas</value>
+                <value>qwerqttty</value>
+                <value>a</value>
+                <value>ab</value>
+                <value>abcd</value>
+                <value>zxyasdf</value>
+            </custom-attribute>
+        </custom-attributes>
         <classification-category catalog-id="storefront-catalog-training2">action</classification-category>
         <pinterest-enabled-flag>false</pinterest-enabled-flag>
         <facebook-enabled-flag>false</facebook-enabled-flag>
