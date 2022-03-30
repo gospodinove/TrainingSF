@@ -21,10 +21,12 @@
 
         <div class="form-group required">
           <label> Interests: </label>
-          <input type="input" id="interests" class="form-control" name="interests" />
+          <input type="input" id="interests" class="form-control" name="interests"
+            value="${pdict.profileForm.training2.interests.value}" />
 
           <label> Favorite movie: </label>
-          <input type="input" id="favoriteMovie" class="form-control" name="favoriteMovie" />
+          <input type="input" id="favoriteMovie" class="form-control" name="favoriteMovie"
+            value="${pdict.profileForm.training2.favoriteMovie.value}" />
         </div>
 
         <button type="submit" class="btn btn-block btn-primary">Submit</button>

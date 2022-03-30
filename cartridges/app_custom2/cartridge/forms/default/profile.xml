@@ -96,5 +96,5 @@
 		<include formid="newpasswords" name="newPasswords"/>
 	</group>
 
-  <include formid="training2" name="training2"/>
+	<include formid="training2" name="training2"/>
 </form>
