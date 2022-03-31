@@ -7,26 +7,26 @@
 
         <div class="form-group required">
           <label> First name: </label>
-          <input type="input" id="firstName" class="form-control" name="firstName"
-            value="${pdict.profileForm.customer.firstname.value}" />
+          <input type="input" id="firstName" class="form-control" <isprint
+            value="${pdict.profileForm.customer.firstname.attributes}" encoding="off" /> />
 
           <label> Last name: </label>
-          <input type="input" id="lastName" class="form-control" name="lastName"
-            value="${pdict.profileForm.customer.lastname.value}" />
+          <input type="input" id="lastName" class="form-control" <isprint
+            value="${pdict.profileForm.customer.lastname.attributes}" encoding="off" /> />
 
           <label> Email: </label>
-          <input type="input" id="email" class="form-control" name="email"
-            value="${pdict.profileForm.customer.email.value}" />
+          <input type="input" id="email" class="form-control" <isprint
+            value="${pdict.profileForm.customer.email.attributes}" encoding="off" /> />
         </div>
 
         <div class="form-group required">
           <label> Interests: </label>
-          <input type="input" id="interests" class="form-control" name="interests"
-            value="${pdict.profileForm.training2.interests.value}" />
+          <input type="input" id="interests" class="form-control" <isprint
+            value="${pdict.profileForm.training2.interests.attributes}" encoding="off" /> />
 
           <label> Favorite movie: </label>
-          <input type="input" id="favoriteMovie" class="form-control" name="favoriteMovie"
-            value="${pdict.profileForm.training2.favoriteMovie.value}" />
+          <input type="input" id="favoriteMovie" class="form-control" <isprint
+            value="${pdict.profileForm.training2.favoriteMovie.attributes}" encoding="off" /> />
         </div>
 
         <button type="submit" class="btn btn-block btn-primary">Submit</button>
