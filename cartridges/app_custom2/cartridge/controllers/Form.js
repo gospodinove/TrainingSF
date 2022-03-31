@@ -1,10 +1,10 @@
 'use strict';
 
 var server = require('server');
-var URLUtils = require('dw/web/URLUtils');
 var userLoggedIn = require('*/cartridge/scripts/middleware/userLoggedIn');
 
 server.get('Show', userLoggedIn.validateLoggedIn, function (req, res, next) {
+    var URLUtils = require('dw/web/URLUtils');
     var profileForm = server.forms.getForm('profile');
     profileForm.clear();
 
@@ -26,12 +26,14 @@ server.get('Show', userLoggedIn.validateLoggedIn, function (req, res, next) {
 
 server.post('Process', userLoggedIn.validateLoggedIn, function (req, res, next) {
   var Transaction = require('dw/system/Transaction');
+  var profileForm = server.forms.getForm('profile');
+
   var result = {
-    firstName: req.form.dwfrm_profile_customer_firstname,
-    lastName: req.form.dwfrm_profile_customer_lastname,
-    email: req.form.dwfrm_profile_customer_email,
-    interests: req.form.dwfrm_profile_training2_interests,
-    favoriteMovie: req.form.dwfrm_profile_training2_favoriteMovie
+    firstName: profileForm.customer.firstname.value,
+    lastName: profileForm.customer.lastname.value,
+    email: profileForm.customer.email.value,
+    interests: profileForm.training2.interests.value,
+    favoriteMovie: profileForm.training2.favoriteMovie.value
   }
 
   res.setViewData(result);
