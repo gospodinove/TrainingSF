@@ -14,4 +14,44 @@
         </custom-attributes>
     </content>
 
+    <content content-id="6ee0d8043f03d5a87b3ee5210f">
+        <type>component.content.banner</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "image" : "16293810719734.jpeg",
+  "heading" : "shrek",
+  "alt" : null
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="training2">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="pagedesigner">
+        <display-name xml:lang="x-default">PageDesigner</display-name>
+        <description xml:lang="x-default">Training 2.0 page made with Page designer</description>
+        <type>page.storePage</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>false</online-flag>
+        <online-flag site-id="training2">false</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="training2">false</searchable-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="6adf9e829b123d311e29c93f54" type="page.storePage.main">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="6ee0d8043f03d5a87b3ee5210f" type="page.storePage.main">
+                <position>1.0</position>
+            </content-link>
+        </content-links>
+        <sitemap-included-flag site-id="training2">false</sitemap-included-flag>
+    </content>
+
 </library>
