@@ -12,5 +12,5 @@ module.exports.render = function (context, modelIn) {
   model.alt = content.alt ? content.alt : null;
   model.heading = content.heading ? content.heading : null;
 
-  return new Template('experience/components/banner').render(model).text;
+  return new Template('experience/components/content/banner').render(model).text;
 };

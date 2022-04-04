@@ -1,0 +1,10 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/banner.css');
+</isscript>
+
+<div class="hero search-banner" style="background-image: url(${pdict.imageURL})">
+  <h1>
+    <isprint value="${pdict.heading ? pdict.heading : ''}" encoding="off" />
+  </h1>
+</div>
