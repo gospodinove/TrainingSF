@@ -17,6 +17,10 @@
 
   <isobject object="${product.raw}" view="detail" />
   <div class="container product-detail product-wrapper" data-pid="${product.id}">
+    <p>
+      <isprint value="${pdict.name}" encoding="on" />
+    </p>
+
     <div class="row">
       <div class="col-12">
         <!--Breadcrumbs-->

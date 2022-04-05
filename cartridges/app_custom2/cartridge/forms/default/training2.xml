@@ -1,5 +1,17 @@
 <?xml version="1.0"?>
 <form xmlns="http://www.demandware.com/xml/form/2008-04-19">
-	<field formid="interests" label="Nickname:" type="string" mandatory="true" max-length="50" />
-	<field formid="favoriteMovie" label="Favorite movie:" type="string" mandatory="true" />
+	<field 
+		formid="interests" 
+		label="Nickname:" 
+		type="string" 
+		mandatory="true" 
+		max-length="50" />
+
+	<field 
+		formid="favoriteMovie" 
+		label="Favorite movie:" 
+		type="string" 
+		mandatory="false"
+		max-length="2"
+		value-error="training2.form.validationMessage" />
 </form>
