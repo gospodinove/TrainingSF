@@ -1,13 +1,18 @@
 <iscontent type="text/html" charset="UTF-8" compact="true" />
 
 <isdecorate template="common/layout/page">
+  <isscript>
+      var assets = require('*/cartridge/scripts/assets.js');
+      assets.addJs('/js/form.js');
+  </isscript>
+
   <div class="container">
     <div class="card">
       <p>
         <isprint value="${Resource.msg('training2.template.hello', 'training2', null)}" encoding="on" />
       </p>
 
-      <form action="${pdict.actionUrl}" class="login" method="POST" name="profileForm">
+      <form action="${pdict.actionUrl}" class="training2" method="POST" name="profileForm">
 
         <div class="form-group required">
           <label> First name: </label>

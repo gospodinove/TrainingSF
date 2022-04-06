@@ -33,7 +33,7 @@ server.post('Process', userLoggedIn.validateLoggedIn, function (req, res, next) 
   var errors = formErrors.getFormErrors(profileForm)
 
   if (!profileForm.valid || errors) {
-    res.json({ success: false, errors: errors });
+    res.json({ success: false, error: errors });
     return next();
   }
 
