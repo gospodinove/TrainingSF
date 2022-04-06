@@ -4,3 +4,4 @@ dw.json
 .DS_Store/
 cartridges/app_storefront_base/
 cartridges/modules/
+cartridges/app_custom2/cartridge/static/
