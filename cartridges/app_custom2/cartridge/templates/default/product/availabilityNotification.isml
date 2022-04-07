@@ -1,0 +1,15 @@
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+
+<isif condition="${!product.available}">
+  <h4>${'Get notified when this item is available'}</h4>
+
+  <form action="${pdict.actionUrl}" class="training2" method="POST" name="profileForm">
+
+    <div class="form-group required">
+      <input type="email" id="email" class="form-control" placeholder="Email" />
+      <div class="invalid-feedback" id="form-email-error"></div>
+    </div>
+
+    <button type="submit" class="btn btn-block btn-primary">Submit</button>
+  </form>
+</isif>
