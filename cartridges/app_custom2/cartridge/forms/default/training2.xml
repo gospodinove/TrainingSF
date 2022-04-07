@@ -13,5 +13,5 @@
 		type="string" 
 		mandatory="false"
 		max-length="2"
-		range-error="training2.form.validationMessage" />
+		range-error="error.training2.validationMessage" />
 </form>
