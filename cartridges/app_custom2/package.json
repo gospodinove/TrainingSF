@@ -1,3 +1,6 @@
 {
-    "hooks": "./cartridge/services/hooks.json"
+    "hooks": "./cartridge/services/hooks.json",
+    "paths": {
+        "base": "../app_storefront_base/"
+    }
 }
