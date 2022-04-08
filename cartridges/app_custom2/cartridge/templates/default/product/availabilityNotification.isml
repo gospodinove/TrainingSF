@@ -1,9 +1,14 @@
 <iscontent type="text/html" charset="UTF-8" compact="true" />
 
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/availabilityNotification.js');
+</isscript>
+
 <isif condition="${!product.available}">
   <h4>${'Get notified when this item is available'}</h4>
 
-  <form action="${pdict.actionUrl}" class="availabilityNotificationForm" method="POST"
+  <form action="${pdict.availabilityNotificationFormActionUrl}" class="availabilityNotificationForm" method="POST"
     name="availabilityNotificationForm">
 
     <div class="form-group required">

@@ -32,7 +32,7 @@ server.post('Process', userLoggedIn.validateLoggedIn, function (req, res, next) 
 
   var errors = formErrors.getFormErrors(profileForm)
 
-  if (!profileForm.valid || errors) {
+  if (!profileForm.valid || (errors && Object.keys(errors).length > 0)) {
     res.json({ success: false, fields: errors });
     return next();
   }
