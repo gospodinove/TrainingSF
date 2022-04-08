@@ -3,10 +3,12 @@
 <isif condition="${!product.available}">
   <h4>${'Get notified when this item is available'}</h4>
 
-  <form action="${pdict.actionUrl}" class="training2" method="POST" name="profileForm">
+  <form action="${pdict.actionUrl}" class="availabilityNotificationForm" method="POST"
+    name="availabilityNotificationForm">
 
     <div class="form-group required">
-      <input type="email" id="email" class="form-control" placeholder="Email" />
+      <input type="email" id="email" class="form-control" placeholder="Email" <isprint
+        value="${pdict.availabilityNotificationForm.email.attributes}" encoding="off" /> />
       <div class="invalid-feedback" id="form-email-error"></div>
     </div>
 
