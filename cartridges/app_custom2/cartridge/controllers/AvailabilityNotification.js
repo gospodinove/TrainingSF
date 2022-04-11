@@ -1,6 +1,7 @@
 'use strict';
 
 var server = require('server');
+var Cookie = require('dw/web/Cookie');
 
 server.post('Submit', function(req, res, next) {
   var formErrors = require('*/cartridge/scripts/formErrors');
@@ -14,9 +15,10 @@ server.post('Submit', function(req, res, next) {
     return next();
   }
 
-  // TODO: 
-  // 1. create a cookie to prevent the form from showing next time
-  // 2. create the custom object
+  var cookie = new Cookie(availabilityNotificationForm.productId.value, '');
+  response.addHttpCookie(cookie);
+  
+  // TODO: create the custom object
 
   res.json({ success: true })
 

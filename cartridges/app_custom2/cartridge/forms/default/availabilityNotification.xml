@@ -6,4 +6,9 @@
 		type="string" 
 		mandatory="true"
     regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" />
+
+	<field 
+		formid="productId" 
+		type="string" 
+		mandatory="true" />
 </form>

@@ -6,17 +6,32 @@
 </isscript>
 
 <isif condition="${!product.available}">
-  <h4>${'Get notified when this item is available'}</h4>
+  <div class="availability-notification-form-container"
+    style="${pdict.isSubscribedForAvailabilityNotification ? 'display: none' : 'display: block'}">
+    <h4>${'Get notified when this item is available'}</h4>
 
-  <form action="${pdict.availabilityNotificationFormActionUrl}" class="availabilityNotificationForm" method="POST"
-    name="availabilityNotificationForm">
+    <form action="${pdict.availabilityNotificationFormActionUrl}" class="availability-notification-form" method="POST"
+      name="availabilityNotificationForm">
 
-    <div class="form-group required">
-      <input type="email" id="email" class="form-control" placeholder="Email" <isprint
-        value="${pdict.availabilityNotificationForm.email.attributes}" encoding="off" /> />
-      <div class="invalid-feedback" id="form-email-error"></div>
-    </div>
+      <div class="form-group required">
+        <input type="email" id="email" class="form-control" placeholder="Email" <isprint
+          value="${pdict.availabilityNotificationForm.email.attributes}" encoding="off" /> />
+        <div class="invalid-feedback" id="form-email-error"></div>
+      </div>
 
-    <button type="submit" class="btn btn-block btn-primary">Submit</button>
-  </form>
+      <div class="form-group required">
+        <input hidden type="input" id="productId" class="form-control" <isprint
+          value="${pdict.availabilityNotificationForm.productId.attributes}" encoding="off" /> />
+        <div class="invalid-feedback" id="form-email-error"></div>
+      </div>
+
+      <button type="submit" class="btn btn-block btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="availability-notification-subscribed-message-container"
+    style="${pdict.isSubscribedForAvailabilityNotification ? 'display: block' : 'display: none'}">
+    <h4>You will be notified when this item is available</h4>
+  </div>
+
 </isif>
