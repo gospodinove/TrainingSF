@@ -2,6 +2,8 @@
 
 var server = require('server');
 var Cookie = require('dw/web/Cookie');
+var CustomObjectMgr = require('dw/object/CustomObjectMgr');
+var Transaction = require('dw/system/Transaction');
 
 server.post('Submit', function(req, res, next) {
   var formErrors = require('*/cartridge/scripts/formErrors');
@@ -17,8 +19,10 @@ server.post('Submit', function(req, res, next) {
 
   var cookie = new Cookie(availabilityNotificationForm.productId.value, '');
   response.addHttpCookie(cookie);
-  
-  // TODO: create the custom object
+
+  Transaction.wrap(function() {
+    CustomObjectMgr.createCustomObject('ProductAvailabilitySubscription', availabilityNotificationForm.email.value + availabilityNotificationForm.productId.value);
+  });
 
   res.json({ success: true })
 
