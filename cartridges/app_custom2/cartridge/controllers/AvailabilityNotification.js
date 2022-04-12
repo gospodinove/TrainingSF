@@ -21,7 +21,10 @@ server.post('Submit', function(req, res, next) {
   response.addHttpCookie(cookie);
 
   Transaction.wrap(function() {
-    CustomObjectMgr.createCustomObject('ProductAvailabilitySubscription', availabilityNotificationForm.email.value + availabilityNotificationForm.productId.value);
+    var obj = CustomObjectMgr.createCustomObject('ProductAvailabilitySubscription', availabilityNotificationForm.email.value + availabilityNotificationForm.productId.value);
+
+    obj.custom.email = availabilityNotificationForm.email.value;
+    obj.custom.productId = availabilityNotificationForm.productId.value;
   });
 
   res.json({ success: true })
