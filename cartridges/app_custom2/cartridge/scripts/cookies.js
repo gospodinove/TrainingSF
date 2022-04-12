@@ -11,7 +11,6 @@ function getCookie(name) {
 }
 
 function deleteCookie(name) {
-  // FIX: This doesn't return any cookies when triggered from notifyAvailable.js
   var cookies = request.getHttpCookies()
 
   for(var i = 0; i < (cookies ? cookies.cookieCount : 0); i++) {

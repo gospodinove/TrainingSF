@@ -2,6 +2,7 @@ var ProductMgr = require('dw/catalog/ProductMgr');
 var CustomObjectMgr = require('dw/object/CustomObjectMgr');
 var Transaction = require('dw/system/Transaction');
 var Mail = require('dw/net/Mail');
+var ArrayList = require('dw/util/ArrayList');
 
 var deleteCookie = require('./cookies').deleteCookie;
 
@@ -14,18 +15,17 @@ function execute(args) {
     if (product.getAvailabilityModel().isInStock()) {
       var subscribersObjects = CustomObjectMgr.queryCustomObjects('ProductAvailabilitySubscription', 'custom.productId = {0}', null, product.ID);
 
-      // send emails only for the products that have been subscribed to
-      var shouldSendEmails = subscribersObjects.hasNext()
+      if (subscribersObjects.count === 0) {
+        continue
+      }
 
       var mail = new Mail()
       
-      if (shouldSendEmails) {
-        mail.setFrom('emo@training2.com')
-        mail.setSubject('New available products')
-        mail.setContent(product.name + ' is now available!!')
-      }
+      mail.setFrom('emo@training2.com')
+      mail.setSubject('New available products')
+      mail.setContent(product.name + ' is now available!!')
 
-      var emailsTo = mail.getTo();
+      var emailsTo = [];
 
       Transaction.wrap(function () {
         while (subscribersObjects.hasNext()) {
@@ -33,16 +33,12 @@ function execute(args) {
 
           emailsTo.push(subscriber.custom.email);
           
-          CustomObjectMgr.remove(subscriber);
+          // CustomObjectMgr.remove(subscriber);
         }
       })
 
-      deleteCookie(product.ID);
-
-      if (shouldSendEmails) {
-        mail.setTo(emailsTo)
-        mail.send()
-      }
+      mail.setTo(ArrayList(emailsTo))
+      mail.send()
 
       subscribersObjects.close();
     }
