@@ -33,7 +33,7 @@ function execute(args) {
 
           emailsTo.push(subscriber.custom.email);
           
-          // CustomObjectMgr.remove(subscriber);
+          CustomObjectMgr.remove(subscriber);
         }
       })
 
