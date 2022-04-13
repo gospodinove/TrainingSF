@@ -6,25 +6,14 @@ var CustomObjectMgr = require('dw/object/CustomObjectMgr');
 var Transaction = require('dw/system/Transaction');
 
 server.post('Submit', function(req, res, next) {
-  var formErrors = require('*/cartridge/scripts/formErrors');
-
-  var availabilityNotificationForm = server.forms.getForm('availabilityNotification');
-
-  var errors = formErrors.getFormErrors(availabilityNotificationForm)
-
-  if (!availabilityNotificationForm.valid || (errors && Object.keys(errors).length > 0)) {
-    res.json({ success: false, fields: errors });
-    return next();
-  }
-
-  var cookie = new Cookie(availabilityNotificationForm.productId.value, '');
+  var cookie = new Cookie(req.form.productId, '');
   response.addHttpCookie(cookie);
 
   Transaction.wrap(function() {
-    var obj = CustomObjectMgr.createCustomObject('ProductAvailabilitySubscription', availabilityNotificationForm.email.value + availabilityNotificationForm.productId.value);
+    var obj = CustomObjectMgr.createCustomObject('ProductAvailabilitySubscription', req.form.email + req.form.productId);
 
-    obj.custom.email = availabilityNotificationForm.email.value;
-    obj.custom.productId = availabilityNotificationForm.productId.value;
+    obj.custom.email = req.form.email;
+    obj.custom.productId = req.form.productId;
   });
 
   res.json({ success: true })
