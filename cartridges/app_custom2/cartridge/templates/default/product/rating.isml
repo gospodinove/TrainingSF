@@ -1,0 +1,31 @@
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+
+<isscript>
+    var URLUtils = require('dw/web/URLUtils');
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addJs('/js/rating.js');
+</isscript>
+
+<iscomment> TODO: display correct value </iscomment>
+<h5>Rating: 3.2/5</h5>
+
+<div>
+  <input type="radio" id="rating-1" name="rating" value="1" />
+  <label for="rating-1">&#9733;</label>
+</div>
+<div>
+  <input type="radio" id="rating-2" name="rating" value="2" />
+  <label for="rating-2">&#9733;&#9733;</label>
+</div>
+<div>
+  <input type="radio" id="rating-3" name="rating" value="3" />
+  <label for="rating-3">&#9733;&#9733;&#9733;</label>
+</div>
+<div>
+  <input type="radio" id="rating-4" name="rating" value="4" />
+  <label for="rating-4">&#9733;&#9733;&#9733;&#9733;</label>
+</div>
+<div>
+  <input type="radio" id="rating-5" name="rating" value="5" />
+  <label for="rating-5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+</div>

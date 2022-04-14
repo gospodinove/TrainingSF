@@ -153,6 +153,11 @@
             <div class="row">
               <isinclude template="product/components/socialIcons" />
             </div>
+
+            <iscomment> Rating </iscomment>
+            <div>
+              <isinclude template="product/rating" />
+            </div>
           </div>
         </div>
       </div>
