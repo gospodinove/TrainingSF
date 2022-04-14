@@ -18,6 +18,12 @@ server.append('Show', function (req, res, next) {
     viewData.customSitePreference = customPreferences.customSitePreference;
     viewData.name = Resource.msgf('training2.template.name', 'training2', null, customerName);
 
+    var productRatingCookie = getCookie(viewData.product.id + '-product-rating')
+    
+    if (productRatingCookie) {
+        viewData.productRating = productRatingCookie.value
+    }
+
     res.setViewData(viewData);
     next();
 });

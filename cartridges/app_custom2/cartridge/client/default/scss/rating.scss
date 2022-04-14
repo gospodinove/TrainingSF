@@ -1,0 +1,9 @@
+form#product-rating-form {
+  label {
+    color: grey;
+    
+    &.selected {
+      color: gold;
+    }
+  }
+}
