@@ -23,8 +23,8 @@ $(document).ready(function () {
       url: url,
       type: 'post',
       data: values,
-      success: function () {
-        $('#previous-product-rating-intput').value = values.rating
+      success: function (data) {
+        $("span#average-rating").html(data.averageRating)
       },
       error: function(err) {
         console.log(err)
