@@ -11,7 +11,7 @@
 <h5>Rating: 3.2/5</h5>
 
 <form action="${URLUtils.url('Rating-Submit')}" id="product-rating-form">
-  <input hidden type="input" name="productId" value="${product.id}">
+  <input hidden type="input" name="productId" value="${product.id}" />
 
   <div>
     <input type="radio" id="rating-1" name="rating" value="1" <isprint
