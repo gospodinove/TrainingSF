@@ -20,19 +20,9 @@ server.append('Show', function (req, res, next) {
     viewData.name = Resource.msgf('training2.template.name', 'training2', null, customerName);
 
     var productRatingCookie = getCookie(viewData.product.id + '-product-rating')
-
-    var productRatingObject = CustomObjectMgr.getCustomObject('ProductRating', viewData.product.id)
-
-    var ratingsSum = productRatingObject ? productRatingObject.custom.ratingsSum : 0
-    var votersCount = productRatingObject ? productRatingObject.custom.votersCount : 0
-
-    viewData.productRating = {
-        // prevent division by 0
-        averageRating: (ratingsSum / (votersCount ? votersCount : 1)).toFixed(2)
-    }
     
     if (productRatingCookie) {
-        viewData.productRating['userRating'] = productRatingCookie.value
+        viewData.userRating = productRatingCookie.value
     }
 
     res.setViewData(viewData);

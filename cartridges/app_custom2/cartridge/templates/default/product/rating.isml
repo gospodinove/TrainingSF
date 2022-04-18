@@ -7,44 +7,41 @@
     assets.addCss('/css/rating.css');
 </isscript>
 
-<iscomment> TODO: display correct value </iscomment>
-<h5>Rating: <span id="average-rating">${pdict.productRating.averageRating}</span>/5</h5>
-
 <form action="${URLUtils.url('Rating-Submit')}" id="product-rating-form">
   <input hidden type="input" name="productId" value="${product.id}" />
 
   <div>
-    <input type="radio" id="rating-1" name="rating" value="1" <isprint
-      value="${pdict.productRating.userRating == 1 ? 'checked' : ''}" encoding="off" /> />
-    <label for="rating-1" <isprint value="${pdict.productRating.userRating == 1 ? 'class=" selected"' : ''}"
+    <input type="radio" id="rating-1" name="rating" value="1" <isprint value="${pdict.userRating == 1 ? 'checked' : ''}"
+      encoding="off" /> />
+    <label for="rating-1" <isprint value="${pdict.userRating == 1 ? 'class=" selected"' : ''}"
       encoding="off" />>&#9733;</label>
   </div>
 
   <div>
-    <input type="radio" id="rating-2" name="rating" value="2" <isprint
-      value="${pdict.productRating.userRating == 2 ? 'checked' : ''}" encoding="off" /> />
-    <label for="rating-2" <isprint value="${pdict.productRating.userRating == 2 ? 'class=" selected"' : ''}"
+    <input type="radio" id="rating-2" name="rating" value="2" <isprint value="${pdict.userRating == 2 ? 'checked' : ''}"
+      encoding="off" /> />
+    <label for="rating-2" <isprint value="${pdict.userRating == 2 ? 'class=" selected"' : ''}"
       encoding="off" />>&#9733;&#9733;</label>
   </div>
 
   <div>
-    <input type="radio" id="rating-3" name="rating" value="3" <isprint
-      value="${pdict.productRating.userRating == 3 ? 'checked' : ''}" encoding="off" /> />
-    <label for="rating-3" <isprint value="${pdict.productRating.userRating == 3 ? 'class=" selected"' : ''}"
+    <input type="radio" id="rating-3" name="rating" value="3" <isprint value="${pdict.userRating == 3 ? 'checked' : ''}"
+      encoding="off" /> />
+    <label for="rating-3" <isprint value="${pdict.userRating == 3 ? 'class=" selected"' : ''}"
       encoding="off" />>&#9733;&#9733;&#9733;</label>
   </div>
 
   <div>
-    <input type="radio" id="rating-4" name="rating" value="4" <isprint
-      value="${pdict.productRating.userRating == 4 ? 'checked' : ''}" encoding="off" /> />
-    <label for="rating-4" <isprint value="${pdict.productRating.userRating == 4 ? 'class=" selected"' : ''}"
+    <input type="radio" id="rating-4" name="rating" value="4" <isprint value="${pdict.userRating == 4 ? 'checked' : ''}"
+      encoding="off" /> />
+    <label for="rating-4" <isprint value="${pdict.userRating == 4 ? 'class=" selected"' : ''}"
       encoding="off" />>&#9733;&#9733;&#9733;&#9733;</label>
   </div>
 
   <div>
-    <input type="radio" id="rating-5" name="rating" value="5" <isprint
-      value="${pdict.productRating.userRating == 5 ? 'checked' : ''}" encoding="off" /> />
-    <label for="rating-5" <isprint value="${pdict.productRating.userRating == 5 ? 'class=" selected"' : ''}"
+    <input type="radio" id="rating-5" name="rating" value="5" <isprint value="${pdict.userRating == 5 ? 'checked' : ''}"
+      encoding="off" /> />
+    <label for="rating-5" <isprint value="${pdict.userRating == 5 ? 'class=" selected"' : ''}"
       encoding="off" />>&#9733;&#9733;&#9733;&#9733;&#9733;</label>
   </div>
 </form>
