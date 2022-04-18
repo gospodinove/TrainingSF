@@ -32,3 +32,33 @@
             </attribute-group>
         </group-definitions>
     </custom-type>
+
+    <custom-type type-id="ProductRating">
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>organization</storage-scope>
+        <key-definition attribute-id="id">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <attribute-definitions>
+            <attribute-definition attribute-id="ratingsSum">
+                <type>double</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="votersCount">
+                <type>double</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="product-rating">
+                <display-name xml:lang="x-default">Product rating</display-name>
+                <attribute attribute-id="ratingsSum"/>
+                <attribute attribute-id="votersCount"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
