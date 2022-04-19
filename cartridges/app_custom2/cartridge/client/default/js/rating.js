@@ -10,14 +10,10 @@ $(document).ready(function () {
 
     $('form#product-rating-form label[for='+elementId+']').addClass('selected')
 
-    $('form#product-rating-form').submit();
-  })
+    var form = $('form#product-rating-form').submit();
 
-  $('form#product-rating-form').on('submit', function(e) {
-    e.preventDefault();
-
-    var url = $(this).attr('action')
-    var values = $(this).serialize()
+    var url = form.attr('action')
+    var values = form.serialize()
 
     $.ajax({
       url: url,
