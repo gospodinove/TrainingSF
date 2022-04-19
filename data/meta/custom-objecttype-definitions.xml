@@ -41,6 +41,13 @@
             <min-length>0</min-length>
         </key-definition>
         <attribute-definitions>
+            <attribute-definition attribute-id="productId">
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="ratingsSum">
                 <type>double</type>
                 <localizable-flag>false</localizable-flag>
@@ -59,6 +66,7 @@
                 <display-name xml:lang="x-default">Product rating</display-name>
                 <attribute attribute-id="ratingsSum"/>
                 <attribute attribute-id="votersCount"/>
+                <attribute attribute-id="productId"/>
             </attribute-group>
         </group-definitions>
     </custom-type>
