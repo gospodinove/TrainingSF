@@ -87,4 +87,41 @@
         </triggers>
     </job>
 
+    <job job-id="ImportRatings" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="training2"/>
+            <step step-id="Generate product ratings file" type="ExecuteScriptModule" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="ExecuteScriptModule.Module">app_custom2/cartridge/scripts/productRatingGenerator.js</parameter>
+                    <parameter name="ExecuteScriptModule.FunctionName">execute</parameter>
+                    <parameter name="ExecuteScriptModule.Transactional">false</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <flow>
+            <context site-id="Sites"/>
+            <step step-id="Import ratings into products" type="ImportCatalog" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="FileNamePattern">ratings.xml</parameter>
+                    <parameter name="NoFilesFoundHandling">NO_FILES_FOUND</parameter>
+                    <parameter name="ImportMode">Merge</parameter>
+                    <parameter name="ImportFailedHandling">WARN</parameter>
+                    <parameter name="AfterImportFileHandling">Archive</parameter>
+                    <parameter name="ArchiveFolder">archive</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2022-04-18Z</date>
+                <time>09:08:16.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
 </jobs>
